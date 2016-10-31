@@ -1,7 +1,7 @@
 {
-  "name": "node_api_server",
+  "name": "node-express-api-es6-babel",
   "version": "0.0.0",
-  "description": "Basic node server to return json data",
+  "description": "Node API server with ES6 support (babel) and express",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",

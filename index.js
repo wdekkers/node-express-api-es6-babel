@@ -28,9 +28,20 @@ app.get('/page/detail/:id', function (req, res) {
   res.json(require("./json/pages/page_"+id+".json"));
 });
 
-// Example post request, just returns JSON send in
+// Example POST request, Returns the JSON send in
 app.post('/page', function (req, res) { 
   res.json(req.body);
+});
+
+// Example PUT request, Returns the JSON send in
+app.put('/page/:id', function (req, res) { 
+  req.body.id = req.params.id
+  res.json(req.body);
+});
+
+// Example DELETE request, just returns JSON success message
+app.delete('/page/:id', function (req, res) { 
+  res.json({"success": true});
 });
 
 // Start the server

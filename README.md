@@ -14,3 +14,11 @@ Your server is up and running now. Test it by going to:
 * [DELETE] http://localhost:3000/page/:id
 
 All the routes are currently working and have no logic what so ever to return. They just send back the JSON send to the route or give a success message.
+
+
+### To Do / Wanna haves
+* Separate routes file
+* Testing
+* Actually saving data
+* Error handling (for example invalid JSON)
+* To be determined 
